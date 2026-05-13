@@ -1,0 +1,65 @@
+Problem statement
+Implement Fraction Class with the following properties and functions.
+
+Properties :
+1.Numerator
+
+2.Denominator
+
+Functions : 1. Parametrized constructor-
+Sets the numerator and denominator values.
+
+2. add-
+This function adds the two fraction following the adding 
+up of two fraction rules and updates the first fractional number.
+
+e.g.
+
+if f1 = 1/4 and f2 = 3/5
+f1.add(f2); results in: 
+f1 = 17/20 and f2 = 3/5
+3.multiply-
+This function multiplies the two fraction and updates the
+ first fractional number.
+
+e.g.
+
+if f1 = 1/4 and f2 = 3/5
+f1.multiply(f2); results in: 
+f1 = 3/20 and f2 = 3/5
+4.simplify
+This function simplifies the fractional value. 
+Use inbuilt __gcd() function.
+
+e.g.
+
+if f1=5/20, which can be further simplified as 1/4 so this 
+simplify will perform this.
+8. print() -
+Prints the final answer in numerator/denominator form.
+
+Detailed explanation ( Input/output format, Notes, Images )
+Sample Input 1:
+67 14
+1
+2 7 78
+Sample Output 1:
+67/156
+Explanation of Sample Input 1:
+Fist fraction is 67/14 and no. of queries is 1. So now 
+in the next line 2 7 8 means type=2 which defines 
+multiplication and second fraction is 7/78 so 67/74 * 7/78=67/156.
+Sample Input 2:
+47 71
+3
+1 91 78
+2 67 75
+1 36 74
+Sample Output 2:
+779/426
+52193/31950
+2506241/1182150
+Explanation of Sample Input 2:
+Given fraction is 47/71 and no. of queries is 3. So now in the next 3 lines 1 91 78 means type = 1 which defines addition and second fraction is 91/78 so 47/71 + 91/78= 779/426.   
+Next query is 2 67 75 means type=2 which defines multiplication and second fraction is 67/75 so 52193/31950 * 67/75= 52193/31950.  
+Last query is 1 36 74 means type=1 which defines addition and second fraction is 36/74 so 52193/31950 + 36/74 = 2506241/1182150.
