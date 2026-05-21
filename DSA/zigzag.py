@@ -7,7 +7,11 @@
 
 def zigzag(arr):
     arr.sort()
-    print(arr)
-    
+    #print(arr)
+    n=len(arr)
+    for i in range(1, n-1, 2):
+        arr[i], arr[i+1] = arr[i+1], arr[i]
+    return arr
 if __name__ == "__main__":
-    zigzag([1,2,3,4])
+   print (zigzag([1,2,3,4]))
+   print (zigzag([4, 3, 7, 8, 6, 2, 1]))
