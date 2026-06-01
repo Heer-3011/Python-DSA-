@@ -9,7 +9,7 @@ data2={'name': ['priya','riya','leena'],
        'city':['surat','ahemdabad','surat']
     }
 # dataframe have 4 args data,index,coloums=['name','age','city'],Dtype=object
-dataframe1=pd.DataFrame(data )
+dataframe1=pd.DataFrame(data)
 print(dataframe1 ['age'])
 
 dataframe2=pd.DataFrame(data2)
