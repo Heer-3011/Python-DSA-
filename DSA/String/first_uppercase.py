@@ -12,7 +12,8 @@ from sys import *
 from collections import *
 from math import *
 
-def convertString(str):
-    return upper(str)
+def convertString(str): 
+    return " ".join(word.capitalize() for word in str.split(" "))
 
-print(convertString("This is prohgram"))
+
+print(convertString("I am a student of the third year"))
