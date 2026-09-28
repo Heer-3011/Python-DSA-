@@ -14,6 +14,6 @@ def check(arr,value):
         return index
     elif arr[index]>value:
         last=arr[index] 
-
+        
 arr1=[2,6,8,12,13,17]
 print(check(arr1,6))
